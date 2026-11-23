@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft - Mundo de bloques</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #eaf3e5;
+            color: #263626;
+        }
+        header {
+            background: #285c29;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 38px;
+            text-shadow: 3px 3px #172d17;
+        }
+        nav {
+            background: #1b351c;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #a5e66e;
+        }
+        .principal {
+            background: #345c31;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+        .principal img {
+            width: 90%;
+            max-width: 850px;
+            height: 350px;
+            object-fit: cover;
+            border: 6px solid #203e20;
+            border-radius: 10px;
+        }
+        .principal h2 {
+            margin: 20px;
+            font-size: 30px;
+        }
+        section {
+            padding: 40px 8%;
+        }
+        h2 {
+            color: #285c29;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .galeria img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 4px solid #477c38;
+            transition: transform 0.3s;
+        }
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+        .video {
+            text-align: center;
+        }
+        iframe {
+            width: 90%;
+            max-width: 700px;
+            height: 390px;
+            border: 5px solid #285c29;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #8ba986;
+            padding: 13px;
+            text-align: center;
+        }
+        th {
+            background: #285c29;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #dcebd5;
+        }
+        .botones {
+            text-align: center;
+            margin-top: 25px;
+        }
+        button {
+            background: #367c32;
+            color: white;
+            border: none;
+            padding: 13px 20px;
+            margin: 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        button:hover {
+            background: #1d4d20;
+        }
+        #resultado {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        footer {
+            background: #1b351c;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+        .oscuro {
+            background: #17251a;
+            color: white;
+        }
+        .oscuro section h2 {
+            color: #9cda82;
+        }
+        .oscuro table {
+            color: #263626;
+        }
+        @media(max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+            .principal img {
+                height: 220px;
+            }
+            iframe {
+                height: 230px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MINECRAFT</h1>
+        <p>Un mundo de bloques</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#galeria">Galería</a>
+        <a href="#video">Video</a>
+        <a href="#informacion">Información</a>
+    </nav>
+
+    <div class="principal" id="inicio">
+        <h2>¡Bienvenido al mundo de Minecraft!</h2>
+
+        <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzt4VMc6eAM4e_K8mCFwUOJupgyyGRY-ALtI0nU9Ax7AYrK5FkvZwO9hs&s=10"
+        alt="Montañas de Minecraft">
+
+        <p>Un videojuego donde tu imaginación no tiene límites.</p>
+    </div>
+
+    <section>
+        <h2>¿Qué es Minecraft?</h2>
+
+        <p>
+            Minecraft es un videojuego de mundo abierto donde los
+            jugadores pueden explorar, construir estructuras,
+            conseguir materiales y sobrevivir. Su mundo está formado
+            por bloques y permite crear diferentes aventuras.
+        </p>
+    </section>
+
+    <section id="galeria">
+        <h2>Galería de Minecraft</h2>
+
+        <div class="galeria">
+
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft%20Creeper.png"
+            alt="Creeper">
+
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft%20Enderman.png"
+            alt="Enderman">
+
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft%20-%201.18%20mountains.jpg"
+            alt="Montañas">
+
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft%20-%20Jungle.jpg"
+            alt="Jungla">
+
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft%20-%20End%20city.jpg"
+            alt="Ciudad del End">
+
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Minecraft%20Pig.png"
+            alt="Cerdo de Minecraft">
+
+        </div>
+    </section>
+
+    <section id="video" class="video">
+        <h2>Video oficial de Minecraft</h2>
+
+        <p>Conoce un poco más sobre este videojuego:</p>
+
+        <br>
+
+        <iframe
+            src="https://www.youtube-nocookie.com/embed/MmB9b5njVbA"
+            title="Tráiler oficial de Minecraft"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <section id="informacion">
+        <h2>Información del videojuego</h2>
+
+        <table>
+            <tr>
+                <th>Característica</th>
+                <th>Información</th>
+            </tr>
+
+            <tr>
+                <td>Nombre</td>
+                <td>Minecraft</td>
+            </tr>
+
+            <tr>
+                <td>Desarrollador</td>
+                <td>Mojang Studios</td>
+            </tr>
+
+            <tr>
+                <td>Lanzamiento oficial</td>
+                <td>2011</td>
+            </tr>
+
+            <tr>
+                <td>Género</td>
+                <td>Aventura y mundo abierto</td>
+            </tr>
+
+            <tr>
+                <td>Modos de juego</td>
+                <td>Supervivencia y Creativo</td>
+            </tr>
+
+            <tr>
+                <td>Plataformas</td>
+                <td>PC, consolas y dispositivos móviles</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>¡Interactúa con Minecraft!</h2>
+
+        <div class="botones">
+
+            <button onclick="saludar()">
+                Mensaje sorpresa
+            </button>
+
+            <button onclick="generarBloque()">
+                Generar bloque
+            </button>
+
+            <button onclick="cambiarTema()">
+                Cambiar tema
+            </button>
+
+        </div>
+
+        <p id="resultado"></p>
+    </section>
+
+    <footer>
+        <p>Proyecto escolar - Página web de Minecraft</p>
+        <p>Creado con HTML, CSS y JavaScript</p>
+    </footer>
+
+    <script>
+
+        // FUNCIÓN 1: Mostrar un mensaje
+        function saludar() {
+            alert("¡Bienvenido al increíble mundo de Minecraft!");
+        }
+
+        // FUNCIÓN 2: Generar un bloque aleatorio
+        function generarBloque() {
+
+            let bloques = [
+                "Piedra",
+                "Diamante",
+                "Oro",
+                "Esmeralda",
+                "Madera",
+                "Tierra"
+            ];
+
+            let numero = Math.floor(Math.random() * bloques.length);
+
+            document.getElementById("resultado").innerHTML =
+                "¡Has conseguido un bloque de " + bloques[numero] + "!";
+        }
+
+        // FUNCIÓN 3: Cambiar el tema de la página
+        function cambiarTema() {
+            document.body.classList.toggle("oscuro");
+        }
+
+    </script>
+
+</body>
+</html>
